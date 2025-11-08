@@ -14,24 +14,26 @@
     <h2>login</h2>
     <form action="index.html" method="post">
       <div class="input-field">
-        <input type="text" id="Nome" placeholder="Digite seu nome">
+        <input type="text" id="Nome" name="nome" placeholder="Digite seu nome" required>
         <label for="Nome">Nome:</label>
       </div>
 
       <div class="input-field">
-        <input type="password" id="Senha" placeholder="Digite sua senha">
+        <input type="password" id="Senha" name="senha" placeholder="Digite sua senha" required minlength="6">
         <label for="Senha">Senha:</label>
       </div>
 
       <div class="center">
-        <button>entrar</button>
+        <button type="submit">entrar</button>
       </div>
     </form>
     <div class="links">
       <a href="#">
         <p>Esqueceu sua Senha ?</p>
-        <a href="#">
-          <p>Ainda não sou cadastrado ?</p>
+      </a>
+      <a href="#">
+        <p>Ainda não sou cadastrado ?</p>
+      </a>
     </div>
 
   </div>
